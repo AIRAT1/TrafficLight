@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
 public class TrafficLight {
     void start() {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
@@ -25,7 +24,7 @@ public class TrafficLight {
         }
     }
 
-    private static String getColor(int time) {
+    private String getColor(int time) {
         String color = "";
         time = time % 10;
         if (time < 3) color = "green";
